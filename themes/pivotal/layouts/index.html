@@ -6,7 +6,8 @@
     {{ partial "banner" }}
     <div class="content nav-fixed">
       <div class="container row">
-        <div class="col-md-9">
+        <div class="col-md-8">
+          <div class="h2">Come dive deeper into Pivotal Cloud Foundry</div>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -17,35 +18,48 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div class="col-md-3">
-          hello hello hello
+        <div class="col-md-4">
+          <div class="h2">Spend the Day With Us</div>
+          <div class='boxes'>
+            <a class='box' href='/event/pivotal-cloud-native-roadshow/sanfrancisco'>
+              <div class='container'>
+                <div class='h3'>San Francisco</div>
+                <p>April 21, 2016</p>
+              </div>
+            </a>
+            <a class='box' href='/event/pivotal-cloud-native-roadshow/losangeles'>
+              <div class='container'>
+                <div class='h3'>Los Angeles</div>
+                <p>May 6, 2016</p>
+              </div>
+            </a>
+            <a class='box' href='/event/pivotal-cloud-native-roadshow/philadelphia'>
+              <div class='container'>
+                <div class='h3'>Philadelphia</div>
+                <p>May 13, 2016</p>
+              </div>
+            </a>
+            <a class='box' href='/event/pivotal-cloud-native-roadshow/toronto'>
+              <div class='container'>
+                <div class='h3'>Toronto</div>
+                <p>May 20, 2016</p>
+              </div>
+            </a>
+            <a class='box' href='/event/pivotal-cloud-native-roadshow/minneapolis'>
+              <div class='container'>
+                <div class='h3'>Minneapolis</div>
+                <p>June 1, 2016</p>
+              </div>
+            </a>
+            <a class='box' href='/event/pivotal-cloud-native-roadshow/atlanta'>
+              <div class='container'>
+                <div class='h3'>Atlanta</div>
+                <p>June 3, 2016</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</body>
-<script type="text/javascript">
-  function banner_fade() {
-      var window_top = $(window).scrollTop();
-      var banner_top = $('#sticky-anchor').offset().top;
-      var scaleAmt = 1.0 + (window_top / 1000);
-      if (window_top > banner_top) {
-          $('#sticky').addClass('stick');
-          $('#sticky-anchor').height($('#sticky').outerHeight());
-          $(".stick").css({
-              "opacity": 1 - $(window).scrollTop() / 250,
-              "transform": "scale("+scaleAmt+")"
-            });
-      }
-      else {
-          $("#sticky.stick").css("opacity", 1);
-          $('#sticky').removeClass('stick');
-          $('#sticky-anchor').height(0);
-
-      }
-  }
-  $(function(){
-    $(window).scroll(banner_fade);
-    banner_fade();
-  });
-</script>
+  {{ partial "footer" }}

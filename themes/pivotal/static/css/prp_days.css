@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  font-family: "Roboto", serif;
+  /*font-family: "Roboto", serif;*/
   color: #666666;
   font-weight: 300;
   background: #f9f9f9;
@@ -30,28 +30,34 @@ a {
 
 .h1, .h2, .h3, .h4 {
     /*font-family: "Roboto", serif;*/
-      font-family: "Proxima Nova", sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     line-height: 1.4em;
 }
 
 /* content styles */
 
 .content {
-    padding: 60px 0 0;
+    padding: 60px 0;
 }
 
 body .nav-fixed{
-  /*top: 25px;*/
   position: relative;
   background: white;
   z-index: 2;
 }
 
+.box{
+  border: 1px solid #ececec;
+  padding: 20px 0;
+  box-shadow: 1px 1px 1px #ececec;
+  vertical-align: top;
+  float: left;
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  color: #666666;
+}
 
-#sticky.stick {
-    margin-top: 0 !important;
-    position: fixed;
-    top: 0;
-    /*z-index: 10000;*/
-    /*border-radius: 0 0 0.5em 0.5em;*/
+.box:hover{
+  color: #059a91;
 }
