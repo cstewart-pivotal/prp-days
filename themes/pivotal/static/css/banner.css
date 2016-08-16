@@ -36,3 +36,9 @@
 #sticky-anchor{
   background: #243640;
 }
+
+#sticky.stick {
+    margin-top: 0 !important;
+    position: fixed;
+    top: 0;
+}
