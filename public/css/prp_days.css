@@ -48,11 +48,13 @@ body .nav-fixed{
 
 .box{
   border: 1px solid #ececec;
+  padding: 20px 0;
   box-shadow: 1px 1px 1px #ececec;
   vertical-align: top;
   float: left;
   width: 100%;
   margin: 0 0 20px 0;
+  padding: 10px 0;
   color: #666666;
 }
 

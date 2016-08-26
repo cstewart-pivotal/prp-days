@@ -113,35 +113,3 @@ header .menu-bar {
 .nav-menu .inner-menu {
     box-shadow: 2px 2px 2px #ececec;
 }
-
-.dropdown-menu{
-  min-width: 190px;
-  border-radius: 1px;
-}
-.btn-group{
-  padding: 17px 12px;
-}
-
-.dropdown-menu a{
-    color:#777;
-}
-
-.dropdown-menu li{
-  list-style-type: none;
-  padding: 5px;
-
-}
-
-.arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-bottom: 9px solid white;
-    padding: 10px 0 0;
-    margin: 0 auto;
-}
-
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
-  background: transparent;
-}

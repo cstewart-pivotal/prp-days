@@ -1,0 +1,23 @@
+{{ partial "head" }}
+<body id="event-prp-days">
+  <div class="container-main">
+    {{ partial "nav" }}
+    <div id="sticky-anchor"></div>
+    {{ partial "banner" }}
+    <div class="content nav-fixed">
+      <div class="container row">
+        <div class="col-md-9">
+          <div class="h2">{{ .Title }} Agenda</div>
+          {{partial "agenda"}}
+          {{ .Content }}
+        </div>
+        <div class="col-md-3">
+          <div class="h2">Registration</div>
+          <p>
+            <a href="http://pivotal-partners.registration.sgizmo.com/s3/" target="_blank">Register For This Event</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ partial "footer" }}
