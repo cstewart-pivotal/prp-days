@@ -1,0 +1,25 @@
+box: debian
+build:
+  steps:
+    - arjen/hugo-build:
+        version: 0.16
+        theme: pivotal
+        flags: -D -v
+deploy:
+  steps:
+    - script:
+        name: Install packages
+        code: |
+          apt-get update --fix-missing
+    - install-packages:
+        packages: wget
+    - joshuamckenty/cloud-foundry-deploy:
+        api: $CF_API
+        username: $CF_USER
+        password: $CF_PASS
+        organization: $CF_ORG
+        space: $CF_SPACE
+        appname: prp-days
+        alt_appname: pivotal-ready-partner-days
+        domain: cfapps.pez.pivotal.io
+        hostname: prp-days
