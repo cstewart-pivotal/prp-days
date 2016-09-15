@@ -8,6 +8,9 @@
       <div class="container row">
         <div class="col-md-9">
           <div class="h2">{{ .Title }} Agenda</div>
+          <p>
+            {{ .Params.event_date }}
+          </p>
           {{ partial "agenda" . }}
           {{ .Content }}
         </div>
