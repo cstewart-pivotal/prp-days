@@ -65,3 +65,7 @@ body .nav-fixed{
     height: 2.5em !important;
     width: 2.5em !important;
   }
+
+  .devs_please {
+    font-weight: bold;
+  }
