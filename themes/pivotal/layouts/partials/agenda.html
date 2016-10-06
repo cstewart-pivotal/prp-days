@@ -11,10 +11,10 @@
         </div>
       </td>
     </tr>
-    <tr>
+    {{ if isset .Params "prod_overview" }}
     <tr>
       <td>
-        {{ printf "%s" $.Params.prod_overview }}
+         {{ printf "%s" $.Params.prod_overview }}
       </td>
       <td></td>
       <td>
@@ -23,6 +23,7 @@
         </div>
       </td>
     </tr>
+    {{ end }}
     <tr>
       <td>
         2:00 - 3:30
