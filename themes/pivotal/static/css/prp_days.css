@@ -61,6 +61,12 @@ body .nav-fixed{
   transform: scale(1.05);
 }
 
+.past{
+  color: #d3d3d3;
+  pointer-events: none;
+  cursor: default;
+}
+
 .em {
     height: 2.5em !important;
     width: 2.5em !important;
