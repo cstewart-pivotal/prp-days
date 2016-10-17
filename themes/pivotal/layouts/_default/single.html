@@ -16,9 +16,15 @@
         </div>
         <div class="col-md-3">
           <div class="h2">Registration</div>
-          <p>
-            <a href="http://pivotal-partners.registration.sgizmo.com/s3/" target="_blank">Register For This Event</a>
-          </p>
+          {{ if isset .Params "event_has_passed" }}
+            <p>
+              Registration for this event has closed.
+            </p>
+          {{ else }}
+            <p>
+              <a href="http://pivotal-partners.registration.sgizmo.com/s3/" target="_blank">Register For This Event</a>
+            </p>
+          {{end}}
         </div>
       </div>
     </div>
