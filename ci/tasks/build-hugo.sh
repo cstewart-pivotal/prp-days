@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-cd ../..
+brew update && brew install hugo
+
+cd ~/playground/prp-days-test
 hugo -t pivotal -v -D
