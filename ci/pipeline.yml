@@ -1,0 +1,30 @@
+jobs:
+  - name: deploy-to-pcf
+    plan:
+    - get: git-repo
+      trigger: true
+    - task: build-hugo
+      file: git-repo/ci/tasks/build-hugo.yml
+      timeout: 5m
+    - put: deploy-app
+      params:
+        manifest: git-repo/manifest-test.yml
+        current_app_name: prp-days-test.yml
+
+resources:
+- name: git-repo
+  type: git
+  source:
+    uri: {{GIT_REPO}}
+    branch: master
+    private_key: {{GIT_PRIVATE_KEY}}
+
+- name: deploy-app
+  type: cf
+  source:
+    api: {{CF_API}}
+    username: {{CF_USER}}
+    password: {{CF_PASS}}
+    organization: {{CF_ORG}}
+    space: {{CF_SPACE}}
+    skip_cert_check: true
