@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+set -e
+
 
 git clone https://github.com/spf13/hugo
 mkdir -p src/github.com/spf13
