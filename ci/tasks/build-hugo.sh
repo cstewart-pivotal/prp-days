@@ -5,7 +5,7 @@ set -e
 echo "hello cami"
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
-export PATH="$HOME/.linuxbrew/bin:$PATH"
+# export PATH="$HOME/.linuxbrew/bin:$PATH"
 
 brew install hugo
 
