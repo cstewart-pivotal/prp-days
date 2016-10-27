@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -e
 
-# set the build path for Go
+
 echo "hello cami"
 
-ruby <(curl -fsSk https://raw.github.com/mxcl/homebrew/go)
+mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
 echo "downloaded homebrew?"
 
 brew install hugo
