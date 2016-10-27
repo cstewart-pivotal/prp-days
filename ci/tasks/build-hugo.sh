@@ -3,6 +3,7 @@ set -e
 
 
 echo "hello cami"
+export ALL_PROXY=proxyIP:port
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 echo "downloaded homebrew!"
