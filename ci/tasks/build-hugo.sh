@@ -2,6 +2,7 @@
 set -e
 
 # set the build path for Go
+echo "hello cami"
 export GOPATH=$(pwd)
 
 go get -v github.com/spf13/hugo
