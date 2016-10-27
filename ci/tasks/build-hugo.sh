@@ -4,8 +4,12 @@ set -e
 
 echo "hello cami"
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
-# export PATH="$HOME/.linuxbrew/bin:$PATH"
+useradd -m linuxbrew
+sudo -u linuxbrew -i /bin/bash
+PATH=~/.linuxbrew/bin:/usr/sbin:/usr/bin:/sbin:/bin
+yes | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
+# ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+
 
 brew install hugo
 
