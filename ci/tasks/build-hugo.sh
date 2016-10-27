@@ -4,8 +4,8 @@ set -e
 
 echo "hello cami"
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-echo "downloaded homebrew!"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+export PATH="$HOME/.linuxbrew/bin:$PATH"
 
 brew install hugo
 
