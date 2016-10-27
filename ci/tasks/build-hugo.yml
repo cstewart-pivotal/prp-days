@@ -4,8 +4,8 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: golang
-    tag: '1.6'
+    repository: ruby
+    tag: '2.1'
 
 inputs:
   - name: git-repo
