@@ -5,7 +5,7 @@ set -e
 echo "hello cami"
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-echo "downloaded homebrew?"
+echo "downloaded homebrew!"
 
 brew install hugo
 
